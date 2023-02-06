@@ -6,6 +6,11 @@ A project explorer that helps developers discover new open-source projects and f
 
 
 ## Set up
+
+run `npm install`
+to install the proper packages
+
+or install here are the packages 
 add typescript to the project 
 `npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
 
