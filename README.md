@@ -5,7 +5,7 @@ A project explorer that helps developers discover new open-source projects and f
 # GitHub Hackathon Challenge
 
 
-##Set up
+## Set up
 add typescript to the project 
 `npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
 
