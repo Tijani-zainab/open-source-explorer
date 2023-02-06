@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.scss';
+import Particles from "react-tsparticles";
+import { Landing } from './Pages';
+import { loadStarsPreset } from "tsparticles-preset-stars";
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
-function App() {
+const App = () => {
+
+  const options = {
+    preset: "stars",
+    Animation: {
+      enable: true,
+      speed: 30,
+      minimumValue: 0.1,
+      sync: false,
+    },
+  };
+
+  const initialize = (instance) => {
+    loadStarsPreset(instance);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div className="App">
+
+       <div className='components-containter'> 
+          <ErrorBoundary>
+            {/* <Routing /> */}
+            <Landing />
+          </ErrorBoundary>
+        </div>
+
+        <div className="particles-container">
+          <Particles id="tsparticles" options={options} init={initialize} />
+        </div>
+      </div>
+    
   );
 }
 
