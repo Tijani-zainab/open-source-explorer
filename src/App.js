@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 import Particles from "react-tsparticles";
-import { Landing } from './Pages';
+// import { Landing } from "./Pages";
 import { loadStarsPreset } from "tsparticles-preset-stars";
-import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
+import Explore from "./Pages/explore";
 
 const App = () => {
-
   const options = {
     preset: "stars",
     Animation: {
@@ -22,22 +22,20 @@ const App = () => {
   };
 
   return (
-    
-      <div className="App">
-
-       <div className='components-containter'> 
-          <ErrorBoundary>
-            {/* <Routing /> */}
-            <Landing />
-          </ErrorBoundary>
-        </div>
-
-        <div className="particles-container">
-          <Particles id="tsparticles" options={options} init={initialize} />
-        </div>
+    <div className="App">
+      <div className="components-containter">
+        <ErrorBoundary>
+          {/* <Routing /> */}
+          <Explore />
+          {/* <Landing /> */}
+        </ErrorBoundary>
       </div>
-    
+
+      <div className="particles-container">
+        <Particles id="tsparticles" options={options} init={initialize} />
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
