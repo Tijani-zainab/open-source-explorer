@@ -4,7 +4,7 @@ import Particles from "react-tsparticles";
 // import { Landing } from "./Pages";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
-import Explore from "./Pages/explore";
+import FilterProject from "./Pages/filterProject";
 
 const App = () => {
   const options = {
@@ -26,7 +26,7 @@ const App = () => {
       <div className="components-containter">
         <ErrorBoundary>
           {/* <Routing /> */}
-          <Explore />
+          <FilterProject />
           {/* <Landing /> */}
         </ErrorBoundary>
       </div>
