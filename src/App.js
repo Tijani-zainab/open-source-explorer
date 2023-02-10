@@ -1,10 +1,9 @@
 import React from "react";
 import "./App.scss";
 import Particles from "react-tsparticles";
-// import { Landing } from "./Pages";
+import { Landing } from "./Pages";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
-import Explore from "./Pages/explore";
 
 const App = () => {
   const options = {
@@ -45,8 +44,7 @@ const App = () => {
       <div className="components-containter">
         <ErrorBoundary>
           {/* <Routing /> */}
-          <Explore />
-          {/* <Landing /> */}
+          <Landing />
         </ErrorBoundary>
       </div>
 
