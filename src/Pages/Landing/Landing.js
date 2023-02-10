@@ -1,10 +1,12 @@
-import React from "react";
 import "./Landing.scss";
+import { Navbar, Hero, Footer } from "../../Components";
 
 const Landing = () => {
     return (
         <div className="landing">
-            <h1>Landing</h1>
+            <Navbar />
+            <Hero />
+            <Footer />
         </div>
     );
 };
