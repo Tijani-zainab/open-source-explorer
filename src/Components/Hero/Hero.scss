@@ -19,9 +19,6 @@
     letter-spacing: 1px;
     margin: 4rem 0 2rem 0;
     text-align: center;
-    @media screen and (max-width: 768px) {
-        font-size: 2rem;
-    }
 }
 
 .hero--subtitle {
@@ -31,9 +28,6 @@
     padding: 0 15rem;
     letter-spacing: 0.9px;
     text-align: center;
-    @media screen and (max-width: 768px) {
-        font-size: 1rem;
-    }
 }
 
 .btn {
@@ -49,5 +43,29 @@
     transition: all 0.3s ease-in-out;
     &:hover {
         background: linear-gradient(93.23deg, #79c0ff 2.35%, #f778ba 76.99%);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        // padding: 0 0.6rem;
+        margin-bottom: 5rem;
+        text-align: center
+    }
+
+    .hero--title {
+        font-size: 2.5rem;
+    }
+
+    .hero--subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        margin: 0.5rem ;
+        padding: 1rem 2rem;
     }
 }

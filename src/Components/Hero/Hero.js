@@ -14,7 +14,7 @@ const Hero = () => {
             </p>
 
             <div className="hero--buttons">
-                <button className="btn hero--button">Explore Projects</button>
+                <button className="btn hero--button-left">Explore Projects</button>
                 <button className="btn hero--button">Filter Projects</button>
             </div>
         </div>
